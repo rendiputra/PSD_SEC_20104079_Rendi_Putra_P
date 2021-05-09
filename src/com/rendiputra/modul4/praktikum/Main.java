@@ -8,7 +8,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         Linked link = new Linked();
         char ulang = 'Y';
-        int input, index;
+        int input, index, key;
 
         /** Cek data */
         if(link.isEmpty()) {
@@ -59,7 +59,7 @@ public class Main {
             System.out.print("Data saat ini: ");
             link.printNode(); // print linked list
             System.out.print("Masukan key\t: ");
-            int key = scan.nextInt();
+            key = scan.nextInt();
             System.out.print("Masukan data\t: ");
             input = scan.nextInt();
 
@@ -80,13 +80,13 @@ public class Main {
         do{
             Node node = new Node();
 
-            System.out.print("Masukan Index\t: " );
-            index = scan.nextInt();
+            System.out.print("Masukan Key\t: " );
+            key = scan.nextInt();
             System.out.print("Masukan data\t: ");
             input = scan.nextInt();
 
             node.data = input;
-            link.insertBefore(index, node);
+            link.insertBefore(key, node);
 
             System.out.print("\nApakah ingin menambah data lagi? (Y/N) : ");
             ulang = scan.next().toUpperCase().charAt(0);
@@ -122,7 +122,7 @@ public class Main {
         /** Replace Data */
         System.out.println("\nReplace data");
         System.out.print("Input key data yang ingin diganti : ");
-        int key =  scan.nextInt();
+        key =  scan.nextInt();
         System.out.print("Input data baru : ");
         int data = scan.nextInt();
 
@@ -174,7 +174,15 @@ public class Main {
 
 
         /** Remove At */
+        System.out.println("\nRemove berdasarkan index ");
+        System.out.print("Masukan index yang ingin dihapus: ");
+        index = scan.nextInt();
 
+        link.removeAt(index);
+        System.out.print("\nPanjang data saat ini: ");
+        link.length(); // print linked list
+        System.out.print("Data saat ini: ");
+        link.printNode(); // print linked list
     }
 
 
