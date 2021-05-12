@@ -6,7 +6,7 @@ public class Linked implements List{
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return head == null;
     }
 
     @Override
@@ -209,6 +209,14 @@ public class Linked implements List{
 
     @Override
     public void clear() {
+        if (isEmpty()){
+            System.out.println("Data sudah kosong!");
+        } else {
+            head = null;
+            tail = null;
+            System.out.println("Data berhasil dihapus semua! ");
+        }
+
     }
 
     @Override

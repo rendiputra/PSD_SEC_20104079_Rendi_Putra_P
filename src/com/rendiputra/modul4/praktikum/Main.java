@@ -28,28 +28,28 @@ public class Main {
             System.out.print("\nApakah ingin menambah data lagi? (Y/N) : ");
             ulang = scan.next().toUpperCase().charAt(0);
         }while (ulang == 'Y');
-        System.out.print("Panjang data saat ini: ");
         link.length(); // print linked list
         System.out.print("Data saat ini: ");
         link.printNode(); // print linked list
 
-/**
-        /** Add Last
+
+        /** Add Last */
         System.out.println("\n\nAdd Last");
          do{
             Node node = new Node();
             System.out.print("Masukan data\t: ");
-            int input = scan.nextInt();
+            input = scan.nextInt();
 
             node.data = input;
             System.out.println(node.data);
             link.addLast(node);
-        }
-        System.out.print("Panjang data saat ini: ");
+
+            System.out.print("\nApakah ingin menambah data lagi? (Y/N) : ");
+            ulang = scan.next().toUpperCase().charAt(0);
+        }while (ulang == 'Y');
         link.length(); // print linked list
         System.out.print("Data saat ini: ");
         link.printNode(); // print linked list
-*/
 
         /** Insert After */
         System.out.println("\n\nInsert After");
@@ -69,7 +69,6 @@ public class Main {
             System.out.print("\nApakah ingin menambah data lagi? (Y/N) : ");
             ulang = scan.next().toUpperCase().charAt(0);
         }while (ulang == 'Y');
-        System.out.print("Panjang data saat ini: ");
         link.length(); // print linked list
         System.out.print("Data saat ini: ");
         link.printNode(); // print linked list
@@ -91,7 +90,6 @@ public class Main {
             System.out.print("\nApakah ingin menambah data lagi? (Y/N) : ");
             ulang = scan.next().toUpperCase().charAt(0);
         }while (ulang == 'Y');
-        System.out.print("Panjang data saat ini: ");
         link.length(); // print linked list
         System.out.print("Data saat ini: ");
         link.printNode(); // print linked list
@@ -113,7 +111,6 @@ public class Main {
             System.out.print("\nApakah ingin menambah data lagi (Y/N) : ");
             ulang = scan.next().toUpperCase().charAt(0);
         }while (ulang == 'Y');
-        System.out.print("Panjang data saat ini: ");
         link.length(); // print linked list
         System.out.print("Data saat ini: ");
         link.printNode(); // print linked list
@@ -127,7 +124,6 @@ public class Main {
         int data = scan.nextInt();
 
         link.replace(key, data);
-        System.out.print("Panjang data saat ini: ");
         link.length(); // print linked list
         System.out.print("Data saat ini: ");
         link.printNode(); // print linked list
@@ -139,7 +135,6 @@ public class Main {
         int delete = scan.nextInt();
 
         link.remove(delete);
-        System.out.print("Panjang data saat ini: ");
         link.length(); // print linked list
         System.out.print("Data saat ini: ");
         link.printNode(); // print linked list
@@ -147,7 +142,7 @@ public class Main {
 
         /** Remove First */
         link.removeFirst();
-        System.out.print("\nPanjang data saat ini: ");
+        System.out.println("\nRemove First");
         link.length(); // print linked list
         System.out.print("Data saat ini: ");
         link.printNode(); // print linked list
@@ -155,7 +150,7 @@ public class Main {
 
         /** Remove Last */
         link.removeLast();
-        System.out.print("\nPanjang data saat ini: ");
+        System.out.println("\nRemove Last");
         link.length(); // print linked list
         System.out.print("Data saat ini: ");
         link.printNode(); // print linked list
@@ -167,7 +162,6 @@ public class Main {
         int cari = scan.nextInt();
 
         link.find(cari);
-        System.out.print("\nPanjang data saat ini: ");
         link.length(); // print linked list
         System.out.print("Data saat ini: ");
         link.printNode(); // print linked list
@@ -179,7 +173,14 @@ public class Main {
         index = scan.nextInt();
 
         link.removeAt(index);
-        System.out.print("\nPanjang data saat ini: ");
+        link.length(); // print linked list
+        System.out.print("Data saat ini: ");
+        link.printNode(); // print linked list
+
+
+        /** Clear */
+        link.clear();
+        System.out.print("\nClear");
         link.length(); // print linked list
         System.out.print("Data saat ini: ");
         link.printNode(); // print linked list
