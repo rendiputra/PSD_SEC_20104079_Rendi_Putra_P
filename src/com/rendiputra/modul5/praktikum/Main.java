@@ -19,24 +19,6 @@ public class Main {
             System.out.println("Check data kosong: List Kosong");
         }
 
-//        Node nodee = new Node(2);
-//        DL.addFirst(nodee);
-//        nodee = new Node(1);
-//        DL.addFirst(nodee);
-//        nodee = new Node(4);
-//        DL.addFirst(nodee);
-//        DL.show();
-//
-//        System.out.print("Masukan key:\t");
-//        int key2 = scan.nextInt();
-//        Node nodeKey2 = new Node(key2);
-//        System.out.print("Masukan data:\t");
-//        int input2 = scan.nextInt();
-//        Node nodeInput2 = new Node(input2);
-//        DL.insertBefore(nodeKey2, nodeInput2);
-//        System.out.print("Data saat ini: ");
-//        DL.show();
-
 
         /** method  addFirst() */
         System.out.println("\n---Method addFirst()---");
