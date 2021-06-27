@@ -18,46 +18,52 @@ public class Main {
 
 
         /** Method show() */
-        System.out.print("Data saat ini: ");
+        System.out.println("Data saat ini: ");
         stack.show();
 
 
         /** Method push() */
         System.out.println("\n---Method push()---");
-        stack.push(node5);
-        stack.push(node4);
-        stack.push(node3);
-        stack.push(node2);
         stack.push(node1);
-        System.out.print("Data saat ini: ");
+        stack.push(node2);
+        stack.push(node3);
+        stack.push(node4);
+        stack.push(node5);
+        System.out.println("Data saat ini: ");
         stack.show();
 
 
         /** Method pop() */
         System.out.println("\n---pop()---");
         stack.pop();
-        System.out.print("Data saat ini: ");
+        System.out.println("Data saat ini: ");
         stack.show();
 
 
         /** Method top() */
         System.out.println("\n---top()---");
-        stack.top();
-        System.out.print("Data saat ini: ");
+        Node nodeTop = new Node(0);
+        nodeTop = stack.top();
+        System.out.print("Data paling atas: ");
+        System.out.println(nodeTop.data);
+        System.out.println("Data saat ini: ");
         stack.show();
 
 
         /** Method topAndPop() */
         System.out.println("\n---topAndPop()---");
-        stack.topAndPop();
-        System.out.print("Data saat ini: ");
+        Node nodeTopAndPop = new Node(0);
+        nodeTopAndPop = stack.topAndPop();
+        System.out.print("Nilai nodeTopAndPop.data: ");
+        System.out.println(nodeTopAndPop.data);
+        System.out.println("Data saat ini: ");
         stack.show();
 
 
         /** Method makeEmpty() */
         System.out.println("\n---makeEmpty()---");
         stack.makeEmpty();
-        System.out.print("Data saat ini: ");
+        System.out.println("Data saat ini: ");
         stack.show();
     }
 }
