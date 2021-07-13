@@ -3,11 +3,11 @@ package com.rendiputra.modul9.praktikum;
 public class BinarySeacrhTree {
     Node root;
 
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return (root == null);
     }
 
-    void insert(Node input) {
+    public void insert(Node input) {
         boolean flag = false;
         if (isEmpty()) {
             root = input;
@@ -37,7 +37,7 @@ public class BinarySeacrhTree {
         }
     }
 
-    void find(int cari) {
+    public void find(int cari) {
         Node temp = root;
         boolean cek = false;
         while (temp != null) {
@@ -56,7 +56,7 @@ public class BinarySeacrhTree {
             System.out.println("Data tidak ketemu !");
     }
 
-    Node findMax() {
+    public Node findMax() {
         Node temp = root;
         if (isEmpty()) {
             return null;
@@ -68,7 +68,7 @@ public class BinarySeacrhTree {
         }
     }
 
-    Node findMin() {
+    public Node findMin() {
         Node temp = root;
         if (isEmpty()) {
             return null;
@@ -126,7 +126,7 @@ public class BinarySeacrhTree {
         }
     }
 
-    void findDirectory(int input) {
+    public void findDirectory(int input) {
         if (isEmpty()) {
             System.out.println("Tree kosong!");
         } else {
@@ -167,7 +167,7 @@ public class BinarySeacrhTree {
         return this.getLeafCountHelper(root);
     }
 
-    private int getLeafCountHelper(Node data) {
+    public int getLeafCountHelper(Node data) {
         if (data == null) {
             return 0;
         } else if (data.left == null && data.right == null) {
@@ -179,7 +179,7 @@ public class BinarySeacrhTree {
     }
 
 
-    void preOrder(Node data) {
+    public void preOrder(Node data) {
         if(data != null) {
             System.out.print(data.data + " ");
             preOrder(data.left);
@@ -187,7 +187,7 @@ public class BinarySeacrhTree {
         }
     }
 
-    void inOrder(Node data) {
+    public void inOrder(Node data) {
         if(data != null) {
             preOrder(data.left);
             System.out.print(data.data + " ");
@@ -195,7 +195,7 @@ public class BinarySeacrhTree {
         }
     }
 
-    void postOrder(Node data) {
+    public void postOrder(Node data) {
         if(data != null) {
             preOrder(data.left);
             preOrder(data.right);
