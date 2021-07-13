@@ -137,6 +137,7 @@ public class HashMap<K, V> {
         V ret = null;
         if(table[location].getKey() == key) {
             table[location] = null;
+            size--;
         }
         return ret;
     }
