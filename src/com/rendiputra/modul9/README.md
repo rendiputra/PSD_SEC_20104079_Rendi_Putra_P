@@ -1,4 +1,4 @@
-# Modul 7: Binary Search Tree
+# Modul 9: Binary Search Tree
 
 ## Dasar Teori
 
