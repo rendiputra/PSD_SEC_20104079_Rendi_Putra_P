@@ -66,28 +66,35 @@ Process finished with exit code 0
 
 3. **Analisis method pada class `HashMap.Java`:**
     - Method `isEmpty() `
-      Digunakan untuk mengecek pengkodisian apakah nilai 'size == 0', jika bernilai 0 maka Method 'isEmpty()' akan mereturn nilai boolean true sebalik jika tidak bernilai 0 maka akan menghasilkan nilai boolean false. Lalu karena method `isEmpty()` adalah method **Function** maka method `isEmpty()` mengembalikan(return) nilai(bertipe data boolean).
+      
+        Digunakan untuk mengecek pengkodisian apakah nilai 'size == 0', jika bernilai 0 maka Method 'isEmpty()' akan mereturn nilai boolean true sebaliknya jika tidak bernilai 0 maka akan menghasilkan nilai boolean false. Lalu karena method `isEmpty()` adalah method **Function** maka method `isEmpty()` mengembalikan(return) nilai(bertipe data boolean).
 
    - Method `size()`
-    Digunakan untuk mengembalikan/mereturn nilai ukuran dari hash map. Lalu karena method `size()` adalah method **Function** maka method `size()` mengembalikan(return) nilai(bertipe data integer).
+    
+        Digunakan untuk mengembalikan/mereturn nilai ukuran dari hash map. Lalu karena method `size()` adalah method **Function** maka method `size()` mengembalikan(return) nilai(bertipe data integer).
 
    - Method `put()`
-    Digunakan untuk menyimpan nilai kedalam hash map dengan cara melakukan hashing terlebih dahulu pada key lalu menyimpan lokasi entry pada alamat yang telah dihashing lalu mengeset kunci(`key`) & nilai(`value`) menggunakan method `setKey()` & `setValue()` kedalam turunan Class Entry() dan menyimpannya ke memory menggunakan script `table[location] = entryNew;`
+    
+        Digunakan untuk menyimpan nilai kedalam hash map dengan cara melakukan hashing terlebih dahulu pada key lalu menyimpan lokasi entry pada alamat yang telah dihashing lalu mengeset kunci(`key`) & nilai(`value`) menggunakan method `setKey()` & `setValue()` kedalam turunan Class Entry() dan menyimpannya ke memory menggunakan script `table[location] = entryNew;`
 
    - Method `get()`
-    Digunakan untuk membaca nilai didalam hash map dengan cara menyeleksi terlebih dahulu apakah nilai kuncinya(`key`) pada parameter adalah `null`? jika iya maka akan mencoba mengakses `table[0]` dan mereturn isi `value` nya menggunakan method `getValue()`, jika parameter `key` nya tidak `null` maka melakukan hashing terlebih dahulu pada `key`nya untuk mendapatkan lokasi memori pada memory, setelah dihashing maka akan mencoba mengakses memori menggunakan script `entry = table[location];` dan mereturn isi `value`nya  menggunakan method `getValue()`
+    
+        Digunakan untuk membaca nilai didalam hash map dengan cara menyeleksi terlebih dahulu apakah nilai kuncinya(`key`) pada parameter adalah `null`? jika iya maka akan mencoba mengakses `table[0]` dan mereturn isi `value` nya menggunakan method `getValue()`, jika parameter `key` nya tidak `null` maka melakukan hashing terlebih dahulu pada `key`nya untuk mendapatkan lokasi memori pada memory, setelah dihashing maka akan mencoba mengakses memori menggunakan script `entry = table[location];` dan mereturn isi `value`nya  menggunakan method `getValue()`
 
    - Method `containsKey()`
-    Digunakan untuk mengecek nilai `key`nya apakah bernilai null atau tidak? jika null maka akan mereturn nilai boolean `true`, jika tidak maka akan mereturn nilai boolean `false`. 
+    
+        Digunakan untuk mengecek nilai `key`nya apakah bernilai null atau tidak? jika null maka akan mereturn nilai boolean `true`, jika tidak maka akan mereturn nilai boolean `false`. 
 
    - Method `containsValue()`
-     Digunakan untuk mengecek nilai `value`nya apakah bernilai null atau tidak? jika null maka akan mereturn nilai boolean `true`, jika tidak maka akan mereturn nilai boolean `false`. 
+        Digunakan untuk mengecek nilai `value`nya apakah bernilai null atau tidak? jika null maka akan mereturn nilai boolean `true`, jika tidak maka akan mereturn nilai boolean `false`. 
 
    - Method `putForNullkey()`
-    Digunakan untuk menyimpan nilai(`value`) dengan `key`nya bernilai `null`, dengan cara mengeset `key` dengan null menggunakan script `entryNew.setKey(null);` dan mengeset `value`nya menggunakan parameter yang telah dimasukan dan menyimpannya kedalam `table[0]` index ke 0.
+        
+        Digunakan untuk menyimpan nilai(`value`) dengan `key`nya bernilai `null`, dengan cara mengeset `key` dengan null menggunakan script `entryNew.setKey(null);` dan mengeset `value`nya menggunakan parameter yang telah dimasukan dan menyimpannya kedalam `table[0]` index ke 0.
 
    - Method `remove()`
-    Digunakan untuk menghapus nilai(`value`) berdasarkan input kunci(`key`) dengan cara menghashing nilai `key`nya untuk mendapatkan lokasi memori pada index table dan mengosongkan nilai(`value`)nya pada table dengan index lokasi yang telah dihashing.
+    
+        Digunakan untuk menghapus nilai(`value`) berdasarkan input kunci(`key`) dengan cara menghashing nilai `key`nya untuk mendapatkan lokasi memori pada index table dan mengosongkan nilai(`value`)nya pada table dengan index lokasi yang telah dihashing.
 
 4. [**Soal 4:  Buatlah method remove untuk menghapus nilai berdasarkan input kunci!**](https://github.com/rendiputra/PSD_SEC_20104079_Rendi_Putra_P/blob/modul8/src/com/rendiputra/modul8/tugas/Main.java)
 
@@ -126,4 +133,4 @@ Process finished with exit code 0
 
 ---
 ## Kesimpulan
-HashMap adalah sebuah class yang berisi sekumpulan pasangan nilai (value) dan kunci (key). Nilai bisa dalam bentuk string, integer, boolean, float, double, dan objek. Sedangkan untuk key biasanya dalam bentuk string dan integer.
+Dimodul ke-8 ini kita mempelajari apa itu Hash Map, bagaimana cara pengimplementasian Hash Map, menganalisis bagaimana proses setiap method dari class `praktikum/HashMap.java` bekerja, dan membuat method remove untuk menghapus nilai berdasarkan input kunci.
