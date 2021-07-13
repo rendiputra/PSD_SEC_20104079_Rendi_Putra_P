@@ -12,6 +12,8 @@ HashMap adalah sebuah class yang berisi sekumpulan pasangan nilai (value) dan ku
 | "Name" | "Rendi Putra Pradana" |
 | "kelas" | "SE-04-C" |
 | "email" | "20104079@ittelkom-pwt.ac.id" |
+
+
 Tabel 1. Contoh HashMap
 
 
