@@ -85,7 +85,8 @@ Process finished with exit code 0
 
 
 
-4. [**Soal 4: Modifikasi method main untuk jumlah input random sejumlah N=100, bandingkan hasil running timenya**](https://github.com/rendiputra/PSD_SEC_20104079_Rendi_Putra_P/blob/modul8/src/com/rendiputra/modul9/tugas/Main.java)
+4. [**Soal 4: Modifikasi method main untuk jumlah input random sejumlah N=100, bandingkan hasil running timenya**](https://github.com/rendiputra/PSD_SEC_20104079_Rendi_Putra_P/blob/modul11/src/com/rendiputra/modul11/tugas/Main.java)
+
 Berikut hasil capture text dari method `main()` yang sudah dimodifikasi:
 ```text
 
